@@ -684,11 +684,13 @@ justify-content: center;
 .modal{
     position: relative;
     width: 528px;
-    height: 581px;
+    min-height: 581px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px ;
 }
+
 .backdrop{
     display: flex;
     align-items: center;
@@ -723,6 +725,207 @@ pointer-events: none;
     background-color: transparent;
     cursor: pointer;
 }
+.modal-btn-icon:hover,
+.modal-btn-icon:focus {
+    fill: #188CE8;}
+
 .modal-btn-icon{
     fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-subscription{
+margin-left: 93px;
+}
+.form-subscription-btn{
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    gap: 10px;
+    padding:10px 28px ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    color: #FFFFFF;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-subscription-btn:hover,
+.form-subscription-btn:focus{
+    background-color: #188CE8;
+
+}
+.form-subscription-box{
+    display: flex;
+    gap:12px ;
+}
+.register-form-subscription{
+    display: block;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.form-title{
+    display: block;
+    text-align: center;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+.register-form {
+    text-align: center;
+}
+.register-form-group{
+    margin-bottom: 20px;
+}
+.register-form-wrap{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.register-form-wrap:last-child{
+    margin-bottom: 0;
+}
+.register-form-agreement{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 30px;
+}
+.register-form-agreement-text{
+    user-select: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+
+    color:var(--primari-text-color);
+    text-underline-position:under;
+}
+.register-checkbox:checked + .register-form-icon .register-form-icon-ucheck{
+    opacity: 0;
+}
+.register-form-icon-check {
+    opacity: 0;
+}
+
+.register-checkbox:checked + .register-form-icon .register-form-icon-check {
+    opacity: 1;
+}
+
+.register-form-btn{
+    display: inline-flex;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    padding: 10px 52px;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.register-form-btn:hover,
+.register-form-btn:focus {
+    background-color: #188CE8;
+}
+
+.register-form-label{
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--primari-text-color);
+    margin-bottom: 4px;
+    
+}
+.register-form-input:hover + .register-icon-form,
+.register-form-input:focus-within + .register-icon-form {
+    fill: #2196F3;
+
+}
+.register-icon-form:hover,
+.register-icon-form:focus{
+    fill: #2196F3;
+}
+.register-form-input:hover,
+.register-form-input:focus{
+ border: 1px solid #2196F3;
+}
+
+.register-form-message:hover,
+.register-form-message:focus{
+border: 1px solid #2196F3;
+}
+
+.register-form-input,
+.register-form-message{
+    width: 100%;
+    padding: 14px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.register-form-message{
+    height: 120px;
+    padding: 12px 16px ;
+    resize: none;
+}
+.register-form-message::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+.register-form-subscription::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height:calc(20/16);
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+.register-icon-form{
+    position: absolute;
+    bottom: 15px;
+    left: 14px;
+    fill: #212121;
+    cursor: pointer;
+    pointer-events: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}  
+ 
