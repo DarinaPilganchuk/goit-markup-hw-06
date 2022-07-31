@@ -808,6 +808,7 @@ margin-left: 93px;
     display: flex;
     align-items: center;
     gap: 9px;
+    margin-left: 25px;
     margin-bottom: 30px;
 }
 .register-form-agreement-text{
@@ -819,6 +820,12 @@ margin-left: 93px;
 
     color:var(--primari-text-color);
     text-underline-position:under;
+}
+.form-agreement-tx{
+    color: var(--accent-color);
+}
+.register-form-subscription.colortext{
+    color:#FFFFFF;
 }
 .register-checkbox:checked + .register-form-icon .register-form-icon-ucheck{
     opacity: 0;
@@ -890,6 +897,7 @@ border: 1px solid #2196F3;
 .register-form-input,
 .register-form-message{
     width: 100%;
+    height: 40px;
     padding: 14px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -921,7 +929,7 @@ border: 1px solid #2196F3;
 }
 .register-icon-form{
     position: absolute;
-    bottom: 15px;
+    bottom: 11px;
     left: 14px;
     fill: #212121;
     cursor: pointer;
