@@ -875,24 +875,6 @@ margin-left: 93px;
     margin-bottom: 4px;
     
 }
-.register-form-input:hover + .register-icon-form,
-.register-form-input:focus-within + .register-icon-form {
-    fill: #2196F3;
-
-}
-.register-icon-form:hover,
-.register-icon-form:focus{
-    fill: #2196F3;
-}
-.register-form-input:hover,
-.register-form-input:focus{
- border: 1px solid #2196F3;
-}
-
-.register-form-message:hover,
-.register-form-message:focus{
-border: 1px solid #2196F3;
-}
 
 .register-form-input,
 .register-form-message{
@@ -910,6 +892,26 @@ border: 1px solid #2196F3;
     height: 120px;
     padding: 12px 16px ;
     resize: none;
+}
+.register-form-input:hover+.register-icon-form,
+.register-form-input:focus-within+.register-icon-form {
+    fill: #2196F3;
+
+}
+
+.register-icon-form:hover,
+.register-icon-form:focus {
+    fill: #2196F3;
+}
+
+.register-form-input:hover,
+.register-form-input:focus {
+    border: 1px solid #2196F3;
+}
+
+.register-form-message:hover,
+.register-form-message:focus {
+    border: 1px solid #2196F3;
 }
 .register-form-message::placeholder{
     font-weight: 400;
