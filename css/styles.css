@@ -136,7 +136,9 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
 }
-
+.item.site-nav {
+    margin-right: 50px;
+}
 .site-nav:hover .site-nav:focus {
     color: var(--accent-color);
 }
@@ -156,9 +158,6 @@ body {
     margin-right: 0;
 }
 
-.item.site-nav {
-    margin-right: 50px;
-}
 
 .menu-nav.link {
     color: var(--title-text-color);
